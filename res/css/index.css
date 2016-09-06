@@ -716,4 +716,18 @@ h1 {
     width: 160px;
     height: 160px; }
   .orange-arrow {
-    margin: 8px auto 0; } }
+    margin: 8px auto 0; }
+  .h-search input {
+    font-size: 40px; }
+  .h-search ::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.102);
+    font-size: 40px; }
+  .h-search ::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.102);
+    font-size: 40px; }
+  .h-search :-moz-placeholder {
+    color: rgba(0, 0, 0, 0.102);
+    font-size: 40px; }
+  .h-search :-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.102);
+    font-size: 40px; } }
