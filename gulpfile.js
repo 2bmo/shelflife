@@ -24,10 +24,10 @@ gulp.task('useref', function(){
         .pipe(useref())
         .pipe(gulp.dest('res'))
 });
-gulp.task('auto', function () {
-    return gulp.src('scss/css/**/*.css')
+gulp.task('pref', function () {
+    return gulp.src('res/css/**/*.css')
         .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            browsers: ['ie >= 9, last 3 versions, > 2%'],
             cascade: false
         }))
         .pipe(gulp.dest('res/css'));
@@ -40,7 +40,7 @@ gulp.task('browserSync', function() {
     })
 });
 gulp.task('default', function (callback) {
-    runSequence(['sass', 'auto', 'useref', 'watch'],
+    runSequence(['sass', 'useref', 'watch'],
         callback
     )
 });

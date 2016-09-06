@@ -46,9 +46,13 @@ img {
   max-height: 100%; }
 
 .h-row-black, .h-row-white {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 0 182px 0 360px; }
   .h-row-black nav, .h-row-black li, .h-row-black a, .h-row-white nav, .h-row-white li, .h-row-white a {
@@ -87,16 +91,22 @@ img {
     font-size: 17px;
     border-right: solid 1px #ebebeb;
     height: 60px;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center; }
   .h-row-white nav:first-child a {
     padding: 0 16px; }
   .h-row-white nav:first-child li:first-child a {
     padding: 0 16px 0 0; }
   .h-row-white nav:last-child ul {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center; }
   .h-row-white nav:last-child li:first-child button {
     border-left: solid 1px #ebebeb; }
@@ -120,8 +130,11 @@ img {
   position: absolute;
   top: 12px;
   right: 10px;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 .cart {
@@ -196,8 +209,11 @@ img {
   width: 100px;
   top: calc(100% - 100px);
   left: calc(50% - 56px);
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-align: center;
   align-items: center; }
   .slick-dots li, .slick-dots button {
     display: inline-block; }
@@ -328,8 +344,11 @@ main, .promo-left, .promo-right {
   .promo-text a {
     font-size: 12px;
     text-transform: uppercase;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-align: center;
     align-items: center;
     margin-right: 18px; }
     .promo-text a i {
@@ -347,16 +366,23 @@ h1 {
   font-size: 48px; }
 
 .blog-row {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 .blog-big {
   width: 560px;
   height: 560px;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
 .blog-small {
@@ -367,9 +393,13 @@ h1 {
     height: 100%;
     color: #101010;
     background-color: #fff;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .blog-small p {
     padding: 20px 12% 0 12%; }
@@ -410,9 +440,13 @@ h1 {
   padding: 72px 22px;
   position: relative; }
   .f-brands ul {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .f-brands a {
     display: inline-block;
@@ -433,9 +467,11 @@ h1 {
   background-color: #707070; }
 
 .cross:before {
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
 
 .cross:after {
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
 .adidas {
@@ -463,6 +499,7 @@ h1 {
   position: absolute;
   bottom: -20px;
   left: calc(50% - 20px);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
   .orange-square i {
     background: url("../img/sprite.svg") no-repeat 87% 68.6%;
@@ -470,6 +507,7 @@ h1 {
     width: 20px;
     height: 12px;
     margin: 14px 0 0 0;
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg); }
 
 .f-menu {
@@ -485,15 +523,21 @@ h1 {
 
 .f-wrap {
   overflow: auto;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-align: start;
   align-items: flex-start; }
 
 .middle, .side {
   float: left; }
   .middle ul, .side ul {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-align: center;
     align-items: center; }
 
 .side {
@@ -570,6 +614,7 @@ h1 {
     padding: 0 58px;
     font-size: 60px; }
   .blog-row {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .side {
     margin-top: 0;
@@ -577,6 +622,7 @@ h1 {
     .side ul {
       display: block; }
   .blog-big {
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap; }
   .blog, .promo-wrap {
     padding: 0 40px; } }
@@ -631,8 +677,11 @@ h1 {
     .h-row-white nav:first-child li:last-child a {
       border-right: none; }
     .h-row-white nav:first-child ul {
+      display: -ms-flexbox;
       display: flex;
+      -ms-flex-pack: justify;
       justify-content: space-between;
+      -ms-flex-align: center;
       align-items: center;
       width: 99.8%; }
     .h-row-white nav:last-child li {
@@ -652,7 +701,9 @@ h1 {
   .f-menu {
     padding: 80px 0 100px; }
   .f-wrap {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 300px;
     margin: 0 auto; }
@@ -675,6 +726,7 @@ h1 {
     .h-row-black p {
       margin: 0 0 28px 0; }
   .h-row-white nav:first-child ul {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .slick-arrow, .line {
     width: 40px; }
